@@ -1,9 +1,0 @@
-C:\Users\User\Desktop\proj\SimpleWebApiClient\SimpleWebApiClient\bin\Release\netstandard2.0\SimpleWebApiClient.deps.json
-C:\Users\User\Desktop\proj\SimpleWebApiClient\SimpleWebApiClient\bin\Release\netstandard2.0\SimpleWebApiClient.dll
-C:\Users\User\Desktop\proj\SimpleWebApiClient\SimpleWebApiClient\bin\Release\netstandard2.0\SimpleWebApiClient.pdb
-C:\Users\User\Desktop\proj\SimpleWebApiClient\SimpleWebApiClient\obj\Release\netstandard2.0\SimpleWebApiClient.csprojAssemblyReference.cache
-C:\Users\User\Desktop\proj\SimpleWebApiClient\SimpleWebApiClient\obj\Release\netstandard2.0\SimpleWebApiClient.csproj.CoreCompileInputs.cache
-C:\Users\User\Desktop\proj\SimpleWebApiClient\SimpleWebApiClient\obj\Release\netstandard2.0\SimpleWebApiClient.AssemblyInfoInputs.cache
-C:\Users\User\Desktop\proj\SimpleWebApiClient\SimpleWebApiClient\obj\Release\netstandard2.0\SimpleWebApiClient.AssemblyInfo.cs
-C:\Users\User\Desktop\proj\SimpleWebApiClient\SimpleWebApiClient\obj\Release\netstandard2.0\SimpleWebApiClient.dll
-C:\Users\User\Desktop\proj\SimpleWebApiClient\SimpleWebApiClient\obj\Release\netstandard2.0\SimpleWebApiClient.pdb
