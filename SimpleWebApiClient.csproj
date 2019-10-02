@@ -2,6 +2,21 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>2.1.0</Version>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Company></Company>
+    <Authors>David</Authors>
+    <PackageProjectUrl>https://github.com/davidyujia/SimpleWebApiClient</PackageProjectUrl>
+    <PackageIconUrl></PackageIconUrl>
+    <PackageTags>WebApi Client</PackageTags>
+    <Copyright></Copyright>
+    <Description></Description>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <NeutralLanguage></NeutralLanguage>
+    <RepositoryUrl>https://github.com/davidyujia/SimpleWebApiClient</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
 </Project>

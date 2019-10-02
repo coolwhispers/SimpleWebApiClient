@@ -6,13 +6,14 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading;
 using System.Threading.Tasks;
+using SimpleWebApiClient.Formatters;
 
 namespace SimpleWebApiClient
 {
     public partial class WebApiClient : IDisposable
     {
-        private string _baseUrl;
-        private TimeSpan _timeOut;
+        private readonly string _baseUrl;
+        private readonly TimeSpan _timeOut;
 
         public WebApiClient(string baseUrl) : this(baseUrl, 600)
         {
@@ -106,7 +107,6 @@ namespace SimpleWebApiClient
                     #region Response
 
                     var response = await client.SendAsync(request, HttpCompletionOption.ResponseHeadersRead, CancellationToken.None).ConfigureAwait(false);
-                    string responseData = null;
                     try
                     {
                         #region Get Response Header
@@ -120,13 +120,14 @@ namespace SimpleWebApiClient
 
                         #endregion
 
+                        string responseData;
                         if (response.StatusCode == HttpStatusCode.OK)
                         {
                             responseData = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
 
                             try
                             {
-                                return Formatter.Deserialize<T>(responseData);
+                                return typeof(T) == typeof(string) ? new StringFormatter().Deserialize<T>(responseData) : Formatter.Deserialize<T>(responseData);
                             }
                             catch (Exception exception)
                             {
@@ -166,10 +167,8 @@ namespace SimpleWebApiClient
 
             _handlerInit?.Invoke(ref handler);
 
-            var client = new HttpClient(handler);
-
-            client.Timeout = _timeOut;
-
+            var client = new HttpClient(handler) { Timeout = _timeOut };
+            
             return client;
         }
 
