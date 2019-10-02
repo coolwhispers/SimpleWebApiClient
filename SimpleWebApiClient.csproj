@@ -12,7 +12,7 @@
     <PackageIconUrl></PackageIconUrl>
     <PackageTags>WebApi Client</PackageTags>
     <Copyright></Copyright>
-    <Description></Description>
+    <Description>Simple Web API Client</Description>
     <PackageLicenseUrl></PackageLicenseUrl>
     <NeutralLanguage></NeutralLanguage>
     <RepositoryUrl>https://github.com/davidyujia/SimpleWebApiClient</RepositoryUrl>
